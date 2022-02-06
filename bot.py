@@ -13,7 +13,7 @@ prefix = os.environ.get('PREFIX')
 client = commands.Bot(command_prefix=prefix,help_command=None, activity = discord.Activity(type=discord.ActivityType.playing , name='with worlds'))
 
 # list of all cogs
-cogs = ['cogs.hello','cogs.react','cogs.reply','cogs.change_nickname','cogs.help','cogs.create']
+cogs = ['cogs.hello','cogs.react','cogs.reply','cogs.change_nickname','cogs.help','cogs.create','cogs.delete']
 
 # loading the cogs
 for cog in cogs:
