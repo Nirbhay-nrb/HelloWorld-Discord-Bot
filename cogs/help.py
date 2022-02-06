@@ -1,6 +1,5 @@
 import discord
 from discord.ext import commands
-from dotenv import load_dotenv
 import os
 
 class Help(commands.Cog):
