@@ -10,4 +10,7 @@ This is a discord bot for testing different functionalities using the discord.py
 > `nick xyz` : changes the nickname of the user to **xyz** <br>
 > `create` : create a category, text channel or voice channel <br>
 
+## Additional features:
+> Deletes a message containing the word `@everyone` or `@here`
+
 ### Invite to your server : <a href='https://discord.com/api/oauth2/authorize?client_id=939225560498966639&permissions=8&scope=bot'>Click here</a>
