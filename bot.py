@@ -6,11 +6,11 @@ from dotenv import load_dotenv
 load_dotenv()
 
 token = os.environ.get('TOKEN')
-prefix = '>'
+prefix = os.environ.get('PREFIX')
 
-client = commands.Bot(command_prefix=prefix, activity = discord.Activity(type=discord.ActivityType.playing , name='with worlds'))
+client = commands.Bot(command_prefix=prefix,help_command=None, activity = discord.Activity(type=discord.ActivityType.playing , name='with worlds'))
 
-cogs = ['cogs.hello','cogs.react','cogs.reply','cogs.change_nickname']
+cogs = ['cogs.hello','cogs.react','cogs.reply','cogs.change_nickname','cogs.help']
 
 for cog in cogs:
     client.load_extension(cog)
