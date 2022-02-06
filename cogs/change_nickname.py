@@ -1,4 +1,3 @@
-import discord
 from discord.ext import commands
 
 class Nick(commands.Cog):
@@ -6,13 +5,14 @@ class Nick(commands.Cog):
         self.bot = bot
 
     @commands.command()
-    async def nick(self,ctx,nick=None):
+    async def nick(self,ctx,nick=None): # argument from command
         try:
             if nick is None:
                 await ctx.send('Please enter a nickname')
             else:
                 await ctx.message.author.edit(nick=nick)
                 await ctx.send('Changed NickName')
+        # error condition
         except Exception as e:
             print(str(e))
             if str(e).split()[0] == '403':
