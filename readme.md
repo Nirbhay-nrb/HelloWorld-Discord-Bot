@@ -9,6 +9,7 @@ This is a discord bot for testing different functionalities using the discord.py
 > `reply` : replies to your message <br>
 > `nick xyz` : changes the nickname of the user to **xyz** <br>
 > `create` : create a category, text channel or voice channel <br>
+> `help` : displays a message with all the commands <br>
 
 ## Additional features:
 > Deletes a message containing the word `@everyone` or `@here`
